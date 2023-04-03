@@ -29,7 +29,7 @@ $agi->hangup();
 
 //$agi->hangup();
 function file_get_contents2($url) {
-  $command = "curl --user admin:prosvasi10 --digest '" . $url . "'";
+  $command = "curl --user admin:vtopassword --digest '" . $url . "'";
   $content = shell_exec($command);
   return $content;
 }
