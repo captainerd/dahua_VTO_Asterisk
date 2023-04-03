@@ -20,7 +20,7 @@ This way setting in VTO web as "Villa call no:" the Trunk no, or adding it into 
 from Asterisk unless you run the node proxy i uploaded here, in that case your trunks ip will be the proxy's IP. this way you can both outgoing calls from asterisk to VTO
 where you can talk to VTO or incoming calls from VTO To you. 
 
-You need to run the node proxy script as a background service or something in that case.
+You need to run "node dahua_proxy.js"  proxy script as a background service or something in that case, to ensure it will always be running with asterisk. dahua_proxy.js just take cares Asterisk won't be dropping outgoing calls from your route by taking care of the compatible codec offering order.
 
 #Secondly:
 
